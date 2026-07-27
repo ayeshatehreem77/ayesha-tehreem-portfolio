@@ -1,0 +1,42 @@
+export const PROCESS_STEPS = [
+  {
+    number: '01',
+    title: 'Discover',
+    category: 'Strategy & Scope',
+    description: 'Understand requirements, research the problem, and define a clear development strategy.',
+    iconType: 'search',
+    accent: '#D16A8A',
+  },
+  {
+    number: '02',
+    title: 'Design',
+    category: 'Architecture & UX',
+    description: 'Plan intuitive user experiences, clean interfaces, and scalable application architecture.',
+    iconType: 'layout',
+    accent: '#E598AF',
+  },
+  {
+    number: '03',
+    title: 'Develop',
+    category: 'MERN Stack Build',
+    description: 'Build responsive frontend and robust backend using the MERN stack with clean, maintainable code.',
+    iconType: 'code',
+    accent: '#A93A5B',
+  },
+  {
+    number: '04',
+    title: 'Test',
+    category: 'QA & Optimization',
+    description: 'Debug, optimize performance, validate APIs, and ensure reliability across devices.',
+    iconType: 'shield',
+    accent: '#C04D6E',
+  },
+  {
+    number: '05',
+    title: 'Deploy',
+    category: 'Cloud & Delivery',
+    description: 'Deploy production-ready applications using modern cloud platforms and continuously improve.',
+    iconType: 'rocket',
+    accent: '#D16A8A',
+  },
+];

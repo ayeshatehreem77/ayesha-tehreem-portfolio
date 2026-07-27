@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* ==========================================
+   GLOBAL WEBSITE SCROLLBAR (Dark Luxury Theme)
+   ========================================== */
+
+/* Width & Track */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0F;
+}
+
+/* Scrollbar Handle / Thumb */
+::-webkit-scrollbar-thumb {
+  background: #17171D;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover State - Accent Highlight */
+::-webkit-scrollbar-thumb:hover {
+  background: #A93A5B;
+  border-color: rgba(209, 106, 138, 0.4);
+}
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #17171D #0C0C0F;
+}
+
+/* ==========================================
+   PROJECT MODAL SPECIFIC SCROLLBAR (.custom-scrollbar)
+   ========================================== */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(12, 12, 15, 0.6);
+  border-radius: 0 1.5rem 1.5rem 0;
+  /* Modal rounded corners ke sath match karne ke liye */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(209, 106, 138, 0.25);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #D16A8A;
+}
+
+@keyframes orbitClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbitAntiClockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 35px rgba(169, 58, 91, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 0 70px rgba(169, 58, 91, 0.45);
+  }
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
