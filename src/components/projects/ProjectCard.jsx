@@ -53,7 +53,7 @@ const BookOpenIcon = () => (
 
 export function HeroProjectCard({ project, onOpenModal }) {
   // Check if this project is TimeCapsule
-  const isTimeCapsule = project.id === 'timecapsule' || project.title?.toLowerCase().includes('timecapsule');
+  const isTimeCapsule = project.id === 'time-capsule' || project.title?.toLowerCase().includes('Time Capsule');
 
   return (
     <motion.article
